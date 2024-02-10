@@ -1,0 +1,57 @@
+body {
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+h1 {
+    text-align: center;
+    color: #333;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    background-color: #f8f9fa;
+    margin: 0;
+    padding: 10px;
+}
+
+#calc {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 13px;
+    max-width: 250px;
+    margin: auto;
+}
+
+#operation-space {
+    grid-column: span 4;
+    background-color: #f4f4f4;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+}
+
+#display {
+    width: 100%;
+    padding: 8px;
+    font-size: 18px;
+    border: none;
+    outline: none;
+}
+
+#table {
+    background-color: #e0e0e0;
+    padding: 20px;
+    text-align: center;
+    cursor: pointer;
+}
+
+#table:hover {
+    background-color: #c0c0c0;
+}
+#table:last-child
+{
+    grid-column: span 3;
+}
